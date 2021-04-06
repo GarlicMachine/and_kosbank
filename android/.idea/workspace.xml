@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="856f5f2d-7c64-4449-9c7c-c71424c6fd92" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1qbHjoPl7k64occDevkxsF9dJ2i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="856f5f2d-7c64-4449-9c7c-c71424c6fd92" name="Default Changelist" comment="" />
+      <created>1617341506049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617341506049</updated>
+    </task>
+    <task id="LOCAL-00001" summary="xsadas">
+      <created>1617341826391</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617341826391</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="xsadas" />
+    <option name="LAST_COMMIT_MESSAGE" value="xsadas" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="752" y="-996" width="745" height="882" key="#Notifications" timestamp="1617341815411">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="752" y="-996" width="745" height="882" key="#Notifications/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617341815411" />
+    <state x="420" y="-895" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617341599466">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="420" y="-895" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617341599466" />
+    <state x="582" y="-986" key="CommitChangelistDialog2" timestamp="1617341825676">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="582" y="-986" key="CommitChangelistDialog2/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617341825676" />
+    <state x="467" y="-906" key="SettingsEditor" timestamp="1617341570949">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="467" y="-906" key="SettingsEditor/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617341570949" />
+    <state x="771" y="-637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617341808210">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="771" y="-637" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617341808210" />
+  </component>
+</project>

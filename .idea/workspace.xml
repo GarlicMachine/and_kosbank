@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d2826a1-a612-4a78-8dab-ac4ef5e09df7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/android/CloudVision/app/src/main/java/com/google/sample/cloudvision/SignActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/CloudVision/app/src/main/res/layout/activity_signup.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/CloudVision/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/CloudVision/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/CloudVision/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/CloudVision/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/CloudVision/app/src/main/java/com/google/sample/cloudvision/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/android/CloudVision/app/src/main/java/com/google/sample/cloudvision/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/CloudVision/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/CloudVision/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/CloudVision/app/src/main/res/layout/content_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/CloudVision/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/CloudVision/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/CloudVision/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/CloudVision/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/CloudVision/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/CloudVision/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qbGv6fAMzbq1gusmuMnh56DLml" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android/CloudVision" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d2826a1-a612-4a78-8dab-ac4ef5e09df7" name="Default Changelist" comment="" />
+      <created>1617341103159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617341103159</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="851" y="-688" key="#Notifications" timestamp="1617342231330">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="851" y="-688" key="#Notifications/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617342231330" />
+    <state x="-1480" y="-549" key="#Project_Structure" timestamp="1617426958085">
+      <screen x="-1920" y="-643" width="1920" height="1040" />
+    </state>
+    <state x="-1480" y="-549" key="#Project_Structure/0.0.1920.1040/-1920.-643.1920.1040@-1920.-643.1920.1040" timestamp="1617426958085" />
+    <state x="106" y="-970" width="1720" height="840" key="AVDManager" timestamp="1617342502390">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="106" y="-970" width="1720" height="840" key="AVDManager/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617342502390" />
+    <state x="583" y="-977" key="CommitChangelistDialog2" timestamp="1617342118252">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="583" y="-977" key="CommitChangelistDialog2/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617342118252" />
+    <state x="740" y="285" key="FileChooserDialogImpl" timestamp="1617669543474">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1180" y="-358" key="FileChooserDialogImpl/0.0.1920.1040/-1920.-643.1920.1040@-1920.-643.1920.1040" timestamp="1617426966272" />
+    <state x="740" y="285" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1617669543474" />
+    <state x="746" y="-795" key="FileChooserDialogImpl/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617341504521" />
+    <state width="930" height="236" key="GridCell.Tab.0.bottom" timestamp="1617342243220">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="930" height="236" key="GridCell.Tab.0.bottom/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617342243220" />
+    <state width="930" height="236" key="GridCell.Tab.0.center" timestamp="1617342243220">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="930" height="236" key="GridCell.Tab.0.center/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617342243220" />
+    <state width="930" height="236" key="GridCell.Tab.0.left" timestamp="1617342243219">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="930" height="236" key="GridCell.Tab.0.left/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617342243219" />
+    <state width="930" height="236" key="GridCell.Tab.0.right" timestamp="1617342243220">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state width="930" height="236" key="GridCell.Tab.0.right/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617342243220" />
+    <state x="546" y="-807" key="IDE.errors.dialog" timestamp="1617342095760">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="546" y="-807" key="IDE.errors.dialog/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617342095760" />
+    <state x="467" y="-906" key="SettingsEditor" timestamp="1617342476535">
+      <screen x="6" y="-1080" width="1920" height="1040" />
+    </state>
+    <state x="467" y="-906" key="SettingsEditor/0.0.1920.1040/6.-1080.1920.1040@6.-1080.1920.1040" timestamp="1617342476535" />
+  </component>
+</project>
