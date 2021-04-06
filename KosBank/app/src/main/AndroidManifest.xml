@@ -11,19 +11,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name="com.teamproject.sample.kosbank.SignActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name="com.teamproject.sample.kosbank.SignActivity" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        //OCR 돌게 하는 화면
         <activity
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar"
-            android:name="com.teamproject.sample.kosbank.MainActivity"
+            android:name="com.teamproject.sample.kosbank.OCR_Activity"
             android:screenOrientation="portrait"/>
 
         <provider
@@ -35,6 +29,18 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths"/>
         </provider>
+
+        <activity
+            android:name="com.teamproject.sample.kosbank.MainActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
     </application>
 
 </manifest>
