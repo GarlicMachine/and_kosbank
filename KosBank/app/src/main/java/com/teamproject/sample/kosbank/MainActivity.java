@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout drawerLayout;
     private View drawerView;
-
+    private View btn_SignUpPage;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -34,12 +34,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //회원가입 레이아웃 클릭 시
-        View btn_signUp = (View)findViewById(R.id.btn_SignUp);
-        btn_signUp.setOnClickListener(new View.OnClickListener() {
+        btn_SignUpPage = (View)findViewById(R.id.btn_SignUpPage);
+        btn_SignUpPage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
-                startActivity(intent);
+
             }
         });
 
@@ -49,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                drawerLayout.closeDrawers();
+
+
             }
         });
 
