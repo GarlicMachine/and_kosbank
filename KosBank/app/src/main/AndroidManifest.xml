@@ -45,6 +45,21 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name="com.teamproject.sample.kosbank.ProductActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.teamproject.sample.kosbank.DepositList_Activity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.teamproject.sample.kosbank.DepositList_Activity2"
+            android:screenOrientation="portrait" >
+        </activity>
+
 
     </application>
 

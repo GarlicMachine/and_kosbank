@@ -44,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
         Button btn_exit = (Button)findViewById(R.id.Btn_MenuExit);
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +59,20 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
+
+        //테스트4 클릭시
+        View btn_Product = (View)findViewById(R.id.btn_Product);
+        btn_Product.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), ProductActivity.class);
+                startActivity(intent);
+            }
+
+        });
+
+
     }
 
 
