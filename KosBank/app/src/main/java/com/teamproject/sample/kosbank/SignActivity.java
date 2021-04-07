@@ -11,7 +11,7 @@ import android.widget.EditText;
 import com.google.sample.kosbank.R;
 
 public class SignActivity extends AppCompatActivity {
-    private EditText edtName, edtRRN, edtAddress;
+    private EditText edtName, edtRRNf, edtRRNl, edtAddress;
     private Button btnOCR;
 
     @Override
@@ -23,15 +23,18 @@ public class SignActivity extends AppCompatActivity {
 
         Intent intent= getIntent();
         String Name = intent.getStringExtra("Name");
-        String RRN = intent.getStringExtra("RRN");
+        String RRNf = intent.getStringExtra("RRNf");
+        String RRNl = intent.getStringExtra("RRNl");
         String Address = intent.getStringExtra("Address");
 
         edtName = (EditText) findViewById(R.id.SignName);
-        edtRRN = (EditText) findViewById(R.id.SignRRN);
+        edtRRNf = (EditText) findViewById(R.id.SignRRN_first);
+        edtRRNl = (EditText) findViewById(R.id.SignRRN_last);
         edtAddress = (EditText) findViewById(R.id.SignAddress);
 
         edtName.setText(Name);
-        edtRRN.setText(RRN);
+        edtRRNf.setText(RRNf);
+        edtRRNl.setText(RRNl);
         edtAddress.setText(Address);
 
 

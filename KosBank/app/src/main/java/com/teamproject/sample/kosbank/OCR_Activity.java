@@ -112,7 +112,8 @@ public class OCR_Activity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), SignActivity.class);
 
                 intent.putExtra("Name", personalInfo.get("Name"));
-                intent.putExtra("RRN", personalInfo.get("RRN"));
+                intent.putExtra("RRNf", personalInfo.get("RRNf"));
+                intent.putExtra("RRNl", personalInfo.get("RRNl"));
                 intent.putExtra("Address", personalInfo.get("Address"));
 
                 startActivity(intent);
@@ -327,9 +328,9 @@ public class OCR_Activity extends AppCompatActivity {
             OCR_Activity activity = mActivityWeakReference.get();
             if (activity != null && !activity.isFinishing()) {
                 TextView imageDetail = activity.findViewById(R.id.image_details);
-                String a = result.get("Name")+'\n';
-                a += result.get("RRN")+'\n';
-                a += result.get("Address")+'\n';
+                String a = "이름: " + result.get("Name") + ", ";
+                a += "주민번호" + result.get("RRN") + ", ";
+                a += "주소" + result.get("Address");
 
 
                 imageDetail.setText(a);
@@ -355,7 +356,7 @@ public class OCR_Activity extends AppCompatActivity {
             builder
 
                     .setMessage("이름 : " + personalInfo.get("Name") +
-                            "\n주민번호 : " + personalInfo.get("RRN") +
+                            "\n주민번호 : " + personalInfo.get("RRNf") + " - " + personalInfo.get("RRNl") +
                             "\n주소 : " + personalInfo.get("Address") + "가 맞습니까?" +
                             "\n(아니오를 누르면 카메라 화면으로 이동합니다.")
 
@@ -418,14 +419,16 @@ public class OCR_Activity extends AppCompatActivity {
             int nameidx = infos[1].indexOf("(");
             Name = infos[1].substring(0, nameidx);
             RRN = infos[2];
+            String[] arr = RRN.split("-");
+            String RRNf = arr[0];
+            String RRNl = arr[1];
+
+
             Address =  infos[3] + infos[4] + infos[5];
 
-            message.append("이름 : "+ Name + "\n");
-            message.append("주민 : " + RRN + "\n");
-            message.append("주소 : " + Address + "\n");
-
             map.put("Name", Name);
-            map.put("RRN", RRN);
+            map.put("RRNf", RRNf);
+            map.put("RRNl", RRNl);
             map.put("Address", Address);
 
 
