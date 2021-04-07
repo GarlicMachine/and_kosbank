@@ -106,16 +106,15 @@ public class SignUpActivity extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             Log.d("Result_insert", s);
-            if(s.length() > 0) {
-                Gson gson = new Gson();
-                MemberVO m = gson.fromJson(s, MemberVO.class);
-                if (s == "1"){
-                    Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
-                    Toast.makeText(getApplicationContext(), "회원가입에 성공했습니다.", Toast.LENGTH_SHORT).show();
-                }else{
-                    Toast.makeText(getApplicationContext(), "회원가입에 실패했습니다.", Toast.LENGTH_SHORT).show();
-                }
+
+            if(s.length() > 0){
+                Intent intent = new Intent(SignUpActivity.this, SignInActivity.class);
+                startActivity(intent);
+                Toast.makeText(getApplicationContext(), "회원가입에 성공했습니다.", Toast.LENGTH_SHORT).show();
+            }else{
+                Toast.makeText(getApplicationContext(), "회원가입에 실패했습니다.", Toast.LENGTH_SHORT).show();
             }
+
 
         }
     }
