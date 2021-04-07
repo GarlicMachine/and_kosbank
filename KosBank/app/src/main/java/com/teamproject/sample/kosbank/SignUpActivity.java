@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import com.google.sample.kosbank.R;
 
-public class SignActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
     private EditText edtName, edtRRNf, edtRRNl, edtAddress;
     private Button btnOCR;
 

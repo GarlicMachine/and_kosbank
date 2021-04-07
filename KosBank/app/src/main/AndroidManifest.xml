@@ -12,7 +12,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
-        <activity android:name="com.teamproject.sample.kosbank.SignActivity" />
+        <activity android:name="com.teamproject.sample.kosbank.SignUpActivity" />
 
         <activity
             android:label="@string/app_name"
@@ -32,6 +32,11 @@
 
         <activity
             android:name="com.teamproject.sample.kosbank.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <activity
+            android:name="com.teamproject.sample.kosbank.SignInActivity"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -109,7 +109,7 @@ public class OCR_Activity extends AppCompatActivity {
         btn_Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), SignActivity.class);
+                Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
 
                 intent.putExtra("Name", personalInfo.get("Name"));
                 intent.putExtra("RRNf", personalInfo.get("RRNf"));
