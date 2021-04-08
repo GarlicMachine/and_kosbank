@@ -38,28 +38,21 @@
         <activity
             android:name="com.teamproject.sample.kosbank.SignInActivity"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
             android:name="com.teamproject.sample.kosbank.ProductActivity"
             android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity
-            android:name="com.teamproject.sample.kosbank.DepositList_Activity"
+            android:name="com.teamproject.sample.kosbank.DepositDetailActivity"
             android:screenOrientation="portrait" >
         </activity>
-
-        <activity
-            android:name="com.teamproject.sample.kosbank.DepositList_Activity2"
-            android:screenOrientation="portrait" >
-        </activity>
-
 
     </application>
 

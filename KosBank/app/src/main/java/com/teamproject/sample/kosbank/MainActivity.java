@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private View drawerView;
 
-
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +42,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         Button btn_exit = (Button)findViewById(R.id.Btn_MenuExit);
         btn_exit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,7 +67,6 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), ProductActivity.class);
                 startActivity(intent);
             }
-
         });
 
 

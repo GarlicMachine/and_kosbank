@@ -68,9 +68,6 @@ public class SignInActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(String s) {
-            Log.d("JSON_RESULT", s);
-
-            //JSON으로 받은 데이터를 VO Obejct로 바꿔준다.
             if(s.length() > 0) {
                 Gson gson = new Gson();
                 MemberVO m = gson.fromJson(s, MemberVO.class);
@@ -80,7 +77,8 @@ public class SignInActivity extends AppCompatActivity {
                     intent.putExtra("id", m.getId());
                     startActivity(intent);
                 } else if (m.getId()== null) {
-                    Toast.makeText(getApplicationContext(), "회원 정보가 올바르지 않습니다.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "회원 정보가 올바르지 않습니다.",Toast.LENGTH_SHORT).show();
+                    //JSON으로 받은 데이터를 VO Obejct로 바꿔준다."회원 정보가 올바르지 않습니다.", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(getApplicationContext(), "가입 인증이 필요한 회원입니다.", Toast.LENGTH_SHORT).show();
                 }
