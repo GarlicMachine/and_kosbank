@@ -43,11 +43,34 @@
         <activity
             android:name="com.teamproject.sample.kosbank.test.ListTest"
             android:screenOrientation="portrait">
+        </activity>
+
+        <!-- ========================================= -->
+        <!-- 박서하 추가 시작 -->
+        <!-- 금융상품 메인 -->
+        <activity
+            android:name="com.teamproject.sample.kosbank.BankItemActivity"
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- 대출상품 리스트 -->
+        <activity
+            android:name="com.teamproject.sample.kosbank.LoansProductsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 대출상품 상세 -->
+        <activity
+            android:name="com.teamproject.sample.kosbank.LoansDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 박서하 추가 종료 -->
+        <!-- ========================================= -->
+
     </application>
 
 </manifest>
