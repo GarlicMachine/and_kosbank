@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/guast_toolbar" />
 
     <LinearLayout
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_gravity="center">
 
         <EditText
             android:id="@+id/edt_id"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginBottom="5dp"
-            android:padding="10dp"
+
             android:textColor="#555555"
             android:hint="ID"
             android:inputType="textPersonName"
@@ -28,7 +32,7 @@
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_marginBottom="10dp"
-            android:padding="10dp"
+
             android:textColor="#555555"
             android:hint="PASSWORD"
             android:inputType="textPassword"
@@ -44,7 +48,8 @@
                 android:id="@+id/btn_SignIn"
                 android:layout_width="140dp"
                 android:layout_height="wrap_content"
-                android:background="#555555"
+                android:background="#1F72D1"
+
                 android:text="로그인"
                 android:textColor="#ffffff"
                 tools:layout_editor_absoluteX="148dp"
@@ -71,4 +76,4 @@
 
     </LinearLayout>
 
-</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

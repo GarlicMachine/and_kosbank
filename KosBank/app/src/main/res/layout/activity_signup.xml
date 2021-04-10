@@ -1,24 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:fitsSystemWindows="true"
+    tools:context="com.teamproject.sample.kosbank.OCR_Activity">
+
+    <include layout="@layout/guast_toolbar" />
 
 
     <LinearLayout
         android:paddingTop="50dp"
         android:layout_width="300dp"
-        android:layout_height="match_parent"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:orientation="vertical">
+
+
+
 
         <EditText
             android:id="@+id/SignId"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="5dp"
-            android:padding="10dp"
+
             android:hint="아이디"
             android:inputType="text" />
 
@@ -27,7 +35,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="5dp"
-            android:padding="10dp"
+
             android:hint="비밀번호"
             android:inputType="textPassword" />
 
@@ -36,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="5dp"
-            android:padding="10dp"
+
             android:hint="이름"
             android:inputType="text" />
         <LinearLayout
@@ -48,7 +56,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="5dp"
-                android:padding="10dp"
+
                 android:hint="주민번호 앞자리"
                 android:inputType="number"
                 android:maxLength="6" />
@@ -72,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="5dp"
-                android:padding="10dp"
+
                 android:hint="주민번호 뒷자리"
                 android:inputType="numberPassword"
                 android:maxLength="7"/>
@@ -85,7 +93,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="5dp"
-            android:padding="10dp"
+
             android:hint="주소"
             android:inputType="text" />
         <LinearLayout
@@ -98,7 +106,7 @@
                 android:layout_width="100dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="5dp"
-                android:padding="10dp"
+
                 android:hint="직업"
                 android:inputType="text" />
             <EditText
@@ -106,7 +114,7 @@
                 android:layout_width="200dp"
                 android:layout_height="40dp"
                 android:layout_marginBottom="5dp"
-                android:padding="10dp"
+
                 android:hint="HP)010-xxxx-xxxx"
                 android:inputType="text" />
 
@@ -118,7 +126,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginBottom="5dp"
-                android:padding="10dp"
+
                 android:hint="이메일"
                 android:inputType="text" />
 
@@ -149,6 +157,7 @@
                 android:background="#555555"
                 android:textColor="#ffffff"
                 android:text="신분증 OCR" />
+
         </LinearLayout>
 
     </LinearLayout>
@@ -158,4 +167,4 @@
 
 
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

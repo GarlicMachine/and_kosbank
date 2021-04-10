@@ -47,7 +47,7 @@ public class SignUpActivity extends AppCompatActivity {
         String RRNl = intent.getStringExtra("RRNl");
         String Address = intent.getStringExtra("Address");
 
-        // 불러온 값을 findView해둔 변수에 set 한다.
+        // (OCR)불러온 값을 findView해둔 변수에 set 한다.
         edtName.setText(Name);
         edtRRNf.setText(RRNf);
         edtRRNl.setText(RRNl);
