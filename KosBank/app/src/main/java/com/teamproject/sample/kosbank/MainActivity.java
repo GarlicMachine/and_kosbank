@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), ProductActivity.class);
+                Intent intent = new Intent(getApplicationContext(), SavingsActivity.class);
                 startActivity(intent);
             }
         });

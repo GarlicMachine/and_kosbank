@@ -7,15 +7,15 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.google.sample.kosbank.R;
-import com.teamproject.sample.kosbank.VO.Deposit_productVO;
+import com.teamproject.sample.kosbank.VO.Savings_productVO;
 
 import java.util.List;
 
-public class DepositAdapter extends BaseAdapter {
-    private List<Deposit_productVO> list;
+public class SavingsAdapter extends BaseAdapter {
+    private List<Savings_productVO> list;
     // drawable 폴더에 이미지를 복사해서 붙여넣는다. 이미지는 숫자로 사용할 수 없고, 소문자이여야 한다.
     // Map<key, 이미지리소스ID 즉 숫자>
-    public DepositAdapter(List<Deposit_productVO> list) {
+    public SavingsAdapter(List<Savings_productVO> list) {
         this.list = list;
     }
     @Override
@@ -64,12 +64,12 @@ public class DepositAdapter extends BaseAdapter {
         }
 
         // 현재 포지션에 날씨 데이터
-        Deposit_productVO vo = list.get(position);
+        Savings_productVO vo = list.get(position);
 
         // 데이터를 설정할 때 각 아이템의 뷰홀더에 데이터를 설정해서 레이아웃 로드와 뷰를 찾는 동작을 최소화하여
         // ListView의 성능을 최적화할 수 있다. (리스트뷰 스크롤시 느리지 않게 하기 위함,, 세션 느낌)
-        holder.d_name.setText(vo.getY_name());
-        holder.d_summary.setText(vo.getY_summary());
+        holder.d_name.setText(vo.getJ_name());
+        holder.d_summary.setText(vo.getJ_summary());
 
         return convertView;
     }

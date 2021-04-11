@@ -26,7 +26,7 @@ public class DepositDetailActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private View drawerView;
     String y_name, y_summary, y_type, y_explanation, y_notice, y_rate, y_max_date, y_min_date, y_min_price;
-    TextView y1, y2, y3, y4, y5, y6, y7, y8, y9;
+    TextView y1, y2, y3, y4, y5, y6, y7, y8, y9, y10, y12, y14, y16;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -39,32 +39,30 @@ public class DepositDetailActivity extends AppCompatActivity {
         y_type = intent.getStringExtra("y_type"); //req.getParameter("id")'
         y_explanation = intent.getStringExtra("y_explanation"); //req.getParameter("id")'
         y_notice = intent.getStringExtra("y_notice"); //req.getParameter("id")'
-        y_rate = intent.getStringExtra("y_rate");
+        y_rate = intent.getStringExtra("y_interest_rate");
         y_max_date = intent.getStringExtra("y_max_date");
         y_min_date = intent.getStringExtra("y_min_date");
         y_min_price = intent.getStringExtra("y_min_price");
 
-        y1 = findViewById(R.id.y1);
-        y2 = findViewById(R.id.y2);
-        y3 = findViewById(R.id.y3);
-        y4 = findViewById(R.id.y4);
-        y5 = findViewById(R.id.y5);
-        y6 = findViewById(R.id.y6);
-        y7 = findViewById(R.id.y7);
-        y8 = findViewById(R.id.y8);
-        y9 = findViewById(R.id.y9);
+        y2 = findViewById(R.id.y_name);
+        y3 = findViewById(R.id.y_summary);
+        y4 = findViewById(R.id.y_rate);
+        y6 = findViewById(R.id.y_type);
+        y8 = findViewById(R.id.y_max_date);
+        y10 = findViewById(R.id.y_min_date);
+        y12 = findViewById(R.id.y_min_price);
+        y14 = findViewById(R.id.y_explanation);
+        y16 = findViewById(R.id.y_notice);
 
-        y1.setText(y_name);
-        y2.setText(y_summary);
+        y2.setText(y_name);
         y3.setText(y_summary);
-        y4.setText(y_type);
-        y5.setText(y_explanation);
-        y6.setText(y_notice);
-        y7.setText(y_rate);
+        y4.setText(y_rate);
+        y6.setText(y_type);
         y8.setText(y_max_date);
-        y9.setText(y_min_date);
-
-
+        y10.setText(y_min_date);
+        y12.setText(y_min_price);
+        y14.setText(y_explanation);
+        y16.setText(y_notice);
 
 
     }

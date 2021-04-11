@@ -68,7 +68,7 @@
                 android:id="@+id/image"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:src="@drawable/icon_2" />
+                android:src="@drawable/icon_3" />
 
             <View
                 android:layout_width="@dimen/fab_margin"
@@ -80,7 +80,7 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:id="@+id/y_name"
+                    android:id="@+id/j_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -94,7 +94,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/y_summary"
+                        android:id="@+id/j_summary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
@@ -138,7 +138,7 @@
                     android:orientation="horizontal" >
 
                     <TextView
-                        android:id="@+id/y_rate"
+                        android:id="@+id/j_rate"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" ~ "
@@ -176,7 +176,7 @@
                     android:orientation="horizontal" >
 
                     <TextView
-                        android:id="@+id/y_min_date"
+                        android:id="@+id/j_min_date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -191,7 +191,7 @@
                         android:textColor="@color/grey_80" />
 
                     <TextView
-                        android:id="@+id/y_max_date"
+                        android:id="@+id/j_max_date"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
@@ -246,7 +246,7 @@
                         android:textColor="@color/grey_80" />
 
                     <TextView
-                        android:id="@+id/y_type"
+                        android:id="@+id/j_type"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=" ~ "
@@ -267,7 +267,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/fab_margin"
-                    android:text="최소예치금액"
+                    android:text="적금종류"
                     android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                     android:textColor="@color/grey_40" />
 
@@ -284,18 +284,12 @@
                         android:textColor="@color/grey_80" />
 
                     <TextView
-                        android:id="@+id/y_min_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text=" ~ "
+                        android:text="자유적립/정액적립"
                         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
                         android:textColor="@color/grey_80" />
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="원"
-                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-                        android:textColor="@color/grey_80" />
+
 
                 </LinearLayout>
 
@@ -349,7 +343,7 @@
                 android:textColor="@color/grey_80" />
 
             <TextView
-                android:id="@+id/y_notice"
+                android:id="@+id/j_notice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/fab_margin"
@@ -360,8 +354,6 @@
                 android:text="유의사항"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 android:textColor="@color/grey_80" />
-
-
 
         </LinearLayout>
 
@@ -394,7 +386,7 @@
                 android:textColor="@color/grey_80" />
 
             <TextView
-                android:id="@+id/y_explanation"
+                android:id="@+id/j_explanation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/fab_margin"
