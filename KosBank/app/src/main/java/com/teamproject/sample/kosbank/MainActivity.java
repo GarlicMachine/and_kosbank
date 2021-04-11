@@ -200,6 +200,7 @@ public class MainActivity extends AppCompatActivity {
                     List<AccountVO> myAccList = Arrays.asList(array);
 
                     Main_myAccountAdapter adapter = new Main_myAccountAdapter(myAccList);
+
                     ListView list_myAccList = (ListView)findViewById(R.id.list_myAccList);
                     list_myAccList.setAdapter(adapter);
 
