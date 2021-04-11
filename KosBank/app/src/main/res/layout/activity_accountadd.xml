@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+
+    <LinearLayout
+        android:paddingTop="50dp"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/logo" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="149dp">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#005dc7"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="예금거래기본 약관"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:checked="true"
+                    android:text="약관동의" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#005dc7"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="입출금이 자유로운 예금 약관"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:checked="true"
+                    android:text="약관동의" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#005dc7"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="비과세종합저축 특약"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/check3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:checked="true"
+                    android:text="약관동의" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="#005dc7"
+                    android:gravity="center"
+                    android:padding="3dp"
+                    android:text="KOS뱅크 통장 특약"
+                    android:textColor="#fff" />
+
+                <CheckBox
+                    android:id="@+id/check4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:checked="true"
+                    android:text="약관동의" />
+            </TableRow>
+
+        </TableLayout>
+
+        <CheckBox
+            android:id="@+id/check5"
+            android:layout_width="330dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="10dp"
+            android:checked="true"
+            android:text="본인은 위 안내에 대해 확인하고 이해합니다." />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/accountName1"
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:padding="10dp"
+                android:layout_marginRight="10dp"
+                android:text="예금주"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/accountName"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:inputType="text"
+                android:padding="10dp"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bankName"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:text="은행명"
+                android:inputType="text"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/bankName1"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text="코스뱅크"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/accountType1"
+                android:layout_width="90dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:text="통장종류"
+                android:inputType="text"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/accountType"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:inputType="text"
+                android:padding="10dp"
+                android:text="입출금통장"
+                android:textAlignment="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/accountPW1"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:padding="10dp"
+                android:hint="계좌비밀번호"
+                android:inputType="text"
+                android:textAlignment="center"/>
+
+            <EditText
+                android:id="@+id/accountPW"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:hint="계좌비밀번호"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textAlignment="center"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_accountadd"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="#005dc7"
+                android:text="계좌개설"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="#005dc7"
+                android:text="취소"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+
