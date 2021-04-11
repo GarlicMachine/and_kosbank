@@ -1,4 +1,4 @@
-package com.teamproject.sample.kosbank;
+package com.teamproject.sample.kosbank.VO;
 
 import java.sql.Timestamp;
 

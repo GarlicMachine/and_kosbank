@@ -17,7 +17,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.sample.kosbank.R;
-import com.teamproject.sample.kosbank.Loans_productVO;
+import com.teamproject.sample.kosbank.VO.Loans_productVO;
 
 import java.util.Arrays;
 import java.util.HashMap;

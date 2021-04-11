@@ -20,7 +20,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.reflect.TypeToken;
 import com.google.sample.kosbank.R;
-import com.teamproject.sample.kosbank.Loans_productVO;
+import com.teamproject.sample.kosbank.VO.Loans_productVO;
 
 import java.io.Serializable;
 import java.util.ArrayList;

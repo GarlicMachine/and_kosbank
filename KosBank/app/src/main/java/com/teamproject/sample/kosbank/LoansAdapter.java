@@ -7,7 +7,7 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.google.sample.kosbank.R;
-import com.teamproject.sample.kosbank.Loans_productVO;
+import com.teamproject.sample.kosbank.VO.Loans_productVO;
 
 import java.util.List;
 
