@@ -88,7 +88,7 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:id="@+id/bank_saving"
+                        android:id="@+id/bank_deposit"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -112,7 +112,7 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:id="@+id/bank_deposit"
+                        android:id="@+id/bank_saving"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -180,6 +180,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/d_name1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="예금상품명"
@@ -187,6 +188,7 @@
                         android:textColor="@color/colorPrimaryDark" />
 
                     <TextView
+                        android:id="@+id/d_summary1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="예금상품 요약, 설명 설명 설명 설명 길게 길게 길게 길게 기일게"
@@ -214,6 +216,7 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/d_name2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="적금상품명"
@@ -221,6 +224,7 @@
                         android:textColor="@color/colorPrimaryDark" />
 
                     <TextView
+                        android:id="@+id/d_summary2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="적금상품 요약, 설명 설명 설명 설명 길게 길게 길게 길게 기일게"
