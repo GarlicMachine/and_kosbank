@@ -51,10 +51,6 @@
         <activity
             android:name="com.teamproject.sample.kosbank.BankItemActivity"
             android:screenOrientation="portrait" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <!-- 대출상품 리스트 -->
@@ -70,6 +66,23 @@
         </activity>
         <!-- 박서하 추가 종료 -->
         <!-- ========================================= -->
+        <!-- 형민 시작================================= -->
+        <!-- 펀드 카테고리 -->
+        <activity
+            android:name="com.teamproject.sample.kosbank.FundCategoryActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 펀드 리스트 -->
+        <activity
+            android:name="com.teamproject.sample.kosbank.FundListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 형민 종료================================= -->
 
     </application>
 
