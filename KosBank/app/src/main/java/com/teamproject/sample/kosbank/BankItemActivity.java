@@ -33,24 +33,6 @@ public class BankItemActivity extends AppCompatActivity {
         InnerTask task = new InnerTask();
         task.execute();
 
-        /*bank_saving = findViewById(R.id.bank_saving); // 예금상품 페이지 이동
-        bank_saving.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(BankItemActivity.this, "예금으로 고치세요".class);
-                startActivity(intent);
-            }
-        });*/
-
-        /*bank_deposit = findViewById(R.id.bank_deposit); // 적금상품 페이지 이동
-        bank_deposit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(BankItemActivity.this, "적금으로 고치세요".class);
-                startActivity(intent);
-            }
-        });*/
-
         bank_loan = findViewById(R.id.bank_loan); // 대출상품 페이지 이동
         bank_loan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,10 +41,6 @@ public class BankItemActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-        // 예금상품 페이지 이동
-
-        // 적금상품 페이지 이동
 
         loan = findViewById(R.id.d_name3); // 대출상품 상세페이지 이동
         loan.setOnClickListener(new View.OnClickListener() {
