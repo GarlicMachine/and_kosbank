@@ -68,6 +68,7 @@ public class TransferDetail_Activity extends AppCompatActivity {
                     Gson gson = new Gson();
                     TransferDetailVO[] array = gson.fromJson(s, TransferDetailVO[].class);
                     List<TransferDetailVO> TransferDetail = Arrays.asList(array);
+                    Log.d("Transver List ==> " , TransferDetail.toString());
 
                     TransferDetailAdapter adapter = new TransferDetailAdapter(TransferDetail);
                     ListView list_TransferDetail = (ListView)findViewById(R.id.list_TransferDetail);

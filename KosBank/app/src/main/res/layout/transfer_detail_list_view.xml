@@ -31,14 +31,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="13dp"
-                    android:text="21-04-09" />
+                    android:text="text_InOut_Day" />
 
                 <TextView
                     android:id="@+id/text_InOut_Time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="13dp"
-                    android:text="13:57" />
+                    android:text="text_InOut_Time" />
             </LinearLayout>
 
 
@@ -53,18 +53,18 @@
                     android:textColor="@color/blue_600"
                     android:textSize="21dp"
                     android:layout_marginBottom="8dp"
-                    android:text="출금" />
+                    android:text="text_InOut" />
                 <TextView
                     android:id="@+id/text_InOut_Comment"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="#000"
-                    android:text="골목식당"/>
+                    android:text="text_InOut_Comment"/>
                 <TextView
                     android:id="@+id/text_TranAccount"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="110-451-550731"/>
+                    android:text="text_TranAccount"/>
             </LinearLayout>
 
             <RelativeLayout

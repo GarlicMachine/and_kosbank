@@ -158,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "보유한 계좌가 없습니다 계좌를 개설해주세요", Toast.LENGTH_SHORT).show();
 
                     }
-                }else if(s == null){
+                }else{
                     Toast.makeText(getApplicationContext(), "보유한 계좌가 없습니다 계좌를 개설해주세요", Toast.LENGTH_SHORT).show();
                 }
             }
@@ -189,8 +189,6 @@ public class MainActivity extends AppCompatActivity {
             Log.d("body------", body);
             return body;
         }
-
-
 
         @Override
         protected void onPostExecute(String s) {

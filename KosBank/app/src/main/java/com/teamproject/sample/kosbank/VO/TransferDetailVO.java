@@ -58,4 +58,19 @@ public class TransferDetailVO {
     public void setBalance(int balance) {
         this.balance = balance;
     }
+
+
+    @Override
+    public String toString() {
+        return "TransferDetailVO{" +
+                "money=" + money +
+                ", account='" + account + '\'' +
+                ", in_comment='" + in_comment + '\'' +
+                ", out_comment='" + out_comment + '\'' +
+                ", in_out='" + in_out + '\'' +
+                ", in_outday='" + in_outday + '\'' +
+                ", in_outtime='" + in_outtime + '\'' +
+                ", balance=" + balance +
+                '}';
+    }
 }
