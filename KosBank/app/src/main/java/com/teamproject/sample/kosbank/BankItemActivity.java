@@ -13,8 +13,9 @@ import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.sample.kosbank.R;
-import com.teamproject.sample.kosbank.VO.Deposit_productVO;
-import com.teamproject.sample.kosbank.VO.Savings_productVO;
+/*import com.teamproject.sample.kosbank.VO.Deposit_productVO;
+import com.teamproject.sample.kosbank.VO.Savings_productVO;*/
+import com.teamproject.sample.kosbank.VO.Loans_productVO;
 
 public class BankItemActivity extends AppCompatActivity {
 
@@ -53,25 +54,22 @@ public class BankItemActivity extends AppCompatActivity {
         task.execute();
         InnerTask2 task2 = new InnerTask2();    // 적금
         task2.execute();
-        /*InnerTask2 task3 = new InnerTask3();    // 대출
-        task3.execute();*/
+        InnerTask3 task3 = new InnerTask3();    // 대출
+        task3.execute();
 
-        /*bank_loan = findViewById(R.id.bank_loan); // 대출상품 페이지 이동
+        bank_loan = findViewById(R.id.bank_loan); // 대출상품 페이지 이동
         bank_loan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(BankItemActivity.this, LoansProductsActivity.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
         deposit = findViewById(R.id.d_name1);
         saving = findViewById(R.id.d_name2);
 
-
-
-
-        /*loan = findViewById(R.id.d_name3); // 대출상품 상세페이지 이동
+        loan = findViewById(R.id.d_name3); // 대출상품 상세페이지 이동
         loan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,7 +79,7 @@ public class BankItemActivity extends AppCompatActivity {
                 intent.putExtra("d_name", value);
                 startActivity(intent);
             }
-        });*/
+        });
     }
 
     private class InnerTask extends AsyncTask {
@@ -198,7 +196,7 @@ public class BankItemActivity extends AppCompatActivity {
         }
     }
 
-    /*private class InnerTask3 extends AsyncTask {
+    private class InnerTask3 extends AsyncTask {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
@@ -227,8 +225,6 @@ public class BankItemActivity extends AppCompatActivity {
                 d_summary3.setText(vo.getD_summary());
             }
         }
-    }*/
-
-
+    }
 
 }
