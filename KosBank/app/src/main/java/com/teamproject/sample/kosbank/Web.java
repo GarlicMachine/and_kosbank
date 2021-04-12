@@ -16,7 +16,7 @@ public class Web {
 
     // 3. 크롬 실행 : http://localhost:8081/gsonEx/
     // ipconfig 확인 .. 연결이 끊김 으로 되어있으면 연결불가
-    public static String ip = "192.168.219.121"; //본인 IP
+    public static String ip = "192.168.219.105"; //본인 IP
     // http:// 본인IP:8081/컨텍스트명(스프링 3번째 패키지)/    ==> 현재 80으로 설정했으므로 생략
     public static String servletURL = "http://" + ip + "/android_kosbank/"; //연결할 JSP URL
 

@@ -5,7 +5,7 @@
     android:layout_width="240dp"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    android:background="#6A7FF3"
+    android:background="#005dc7"
     android:id="@+id/Drawer_Menu">
 
     <Button
@@ -13,7 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
-        android:text="나가기"
+        android:text="로그아웃"
         android:layout_gravity="right"/>
 
     <TextView
@@ -22,83 +22,109 @@
         android:layout_margin="3dp"
         android:padding="8dp"
         android:gravity="center"
-        android:background="#3F51B5"
-        android:text="KOS BANK" />
+        android:background="#005dc7"
+        android:text="KOS BANK"
+        android:textColor="#fff"
+        android:textSize="30dp"/>
 
     <LinearLayout
-        android:id="@+id/btn_SignUp"
+        android:id="@+id/btn_account"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
         android:padding="5dp"
-        android:background="#A5B2F8"
+        android:background="#005dc7"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="테스트1" />
+            android:text="계좌개설"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/btn_accountlist"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
-        android:background="#A5B2F8"
+        android:padding="5dp"
+        android:background="#005dc7"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="테스트2" />
-
+            android:text="계좌조회"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/btn_accounttransfer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
-        android:background="#A5B2F8"
+        android:padding="5dp"
+        android:background="#005dc7"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="테스트3" />
-
+            android:text="계좌이체"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/btn_Product"
+        android:id="@+id/btn_bankitem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginBottom="5dp"
-        android:background="#A5B2F8"
+        android:padding="5dp"
+        android:background="#005dc7"
         android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:text="테스트4" />
-
+            android:text="금융상품"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/btn_funditem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:background="#005dc7"
+        android:orientation="vertical">
 
-
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="펀드"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
 
 </LinearLayout>

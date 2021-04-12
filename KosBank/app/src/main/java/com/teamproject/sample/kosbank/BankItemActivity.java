@@ -15,7 +15,9 @@ import com.google.gson.Gson;
 import com.google.sample.kosbank.R;
 /*import com.teamproject.sample.kosbank.VO.Deposit_productVO;
 import com.teamproject.sample.kosbank.VO.Savings_productVO;*/
+import com.teamproject.sample.kosbank.VO.Deposit_productVO;
 import com.teamproject.sample.kosbank.VO.Loans_productVO;
+import com.teamproject.sample.kosbank.VO.Savings_productVO;
 
 public class BankItemActivity extends AppCompatActivity {
 

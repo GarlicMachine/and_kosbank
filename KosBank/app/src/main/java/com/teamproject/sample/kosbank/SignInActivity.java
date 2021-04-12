@@ -31,6 +31,15 @@ public class SignInActivity extends AppCompatActivity {
         edtId = (EditText) findViewById(R.id.edt_id);
         edtPwd = (EditText) findViewById(R.id.edt_pwd);
         btnSignIn = (Button) findViewById(R.id.btn_SignIn);
+        btnSignUpPage = (Button) findViewById(R.id.btn_SignUpPage);
+
+        btnSignUpPage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SignUpActivity.class);
+                startActivity(intent);
+            }
+        });
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
