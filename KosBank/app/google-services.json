@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "936241527197",
+    "project_id": "ivory-partition-310307",
+    "storage_bucket": "ivory-partition-310307.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936241527197:android:c69f9368fcfc864c2c1774",
+        "android_client_info": {
+          "package_name": "com.teamproject.sample.kosbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936241527197-ufhmmbba6h5r5pk00fi8pd67ih8g5gkl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4NBZDSp7rVqJ4lkfyKJ84Zo4BTTpgPHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936241527197-ufhmmbba6h5r5pk00fi8pd67ih8g5gkl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

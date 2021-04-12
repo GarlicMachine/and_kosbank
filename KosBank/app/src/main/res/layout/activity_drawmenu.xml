@@ -5,7 +5,7 @@
     android:layout_width="240dp"
     android:layout_height="match_parent"
     android:layout_gravity="start"
-    android:background="@color/blue_700"
+    android:background="#005dc7"
     android:id="@+id/Drawer_Menu">
 
     <Button
@@ -28,7 +28,7 @@
         android:textSize="30dp"/>
 
     <LinearLayout
-        android:id="@+id/btn_account"
+        android:id="@+id/btn_Account_Add"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
@@ -67,24 +67,8 @@
             android:textColor="#ffffff"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/btn_accounttransfer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginBottom="5dp"
-        android:padding="5dp"
-        android:background="#005dc7"
-        android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:text="계좌이체"
-            android:textSize="25dp"
-            android:textColor="#ffffff"/>
-    </LinearLayout>
+
+
 
     <LinearLayout
         android:id="@+id/btn_bankitem"
@@ -102,6 +86,46 @@
             android:layout_height="match_parent"
             android:gravity="center"
             android:text="금융상품"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_accounttransfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:background="#005dc7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="계좌이체"
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_accountDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:padding="5dp"
+        android:background="#005dc7"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="계좌해지"
             android:textSize="25dp"
             android:textColor="#ffffff"/>
     </LinearLayout>
@@ -125,5 +149,4 @@
             android:textSize="25dp"
             android:textColor="#ffffff"/>
     </LinearLayout>
-
 </LinearLayout>

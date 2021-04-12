@@ -7,15 +7,15 @@ import android.widget.BaseAdapter;
 import android.widget.TextView;
 
 import com.google.sample.kosbank.R;
-import com.teamproject.sample.kosbank.VO.AccountVO;
+import com.teamproject.sample.kosbank.VO.accountVO;
 import com.teamproject.sample.kosbank.test.fmt;
 
 import java.util.List;
 
 public class Main_myAccountAdapter extends BaseAdapter {
-    private List<AccountVO> list;
+    private List<accountVO> list;
 
-    public Main_myAccountAdapter(List<AccountVO> list){this.list = list;}
+    public Main_myAccountAdapter(List<accountVO> list){this.list = list;}
 
     @Override
     public int getCount() {
@@ -51,7 +51,7 @@ public class Main_myAccountAdapter extends BaseAdapter {
         }else{
             holder=(ViewHolder)convertView.getTag();//setTag()를 읽어서 재사용시 꺼내쓴다.
         }
-        AccountVO vo = list.get(position);
+        accountVO vo = list.get(position);
         holder.text_myAccount.setText(vo.getAccount());
         holder.text_myAccountType.setText(vo.getAccountType());
         holder.text_myBalance.setText(fmt.moneyFormatToWon(vo.getBalance()));

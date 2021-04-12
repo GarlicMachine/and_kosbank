@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.sample.kosbank.R;
-import com.teamproject.sample.kosbank.VO.AccountVO;
+import com.teamproject.sample.kosbank.VO.accountVO;
 import com.teamproject.sample.kosbank.VO.TransferDetailVO;
 import com.teamproject.sample.kosbank.test.fmt;
 

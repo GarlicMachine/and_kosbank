@@ -21,7 +21,7 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.sample.kosbank.R;
-import com.teamproject.sample.kosbank.VO.AccountVO;
+import com.teamproject.sample.kosbank.VO.accountVO;
 import com.teamproject.sample.kosbank.test.fmt;
 
 import java.util.ArrayList;
@@ -29,15 +29,34 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import android.widget.LinearLayout;
+import android.widget.Toast;
+
+/*import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
+import com.google.firebase.messaging.FirebaseMessaging;*/
+import com.google.gson.Gson;
+import com.google.sample.kosbank.R;
+import com.teamproject.sample.kosbank.VO.MemberVO;
+import com.teamproject.sample.kosbank.test.memberId;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
-
     private DrawerLayout drawerLayout;
     private View drawerMenu, btn_SignUpPage, lay_MyAllAccount;
     private Button Btn_Logout;
     private ImageButton btn_menu;
     private TextView text_Account, text_Balance;
     private  String mainAccount;
+    private View drawerView;
+    private View btn_Account_Add;
+    private View btn_accountDelete;
+    private View account_TransferList;
+    private  String id ;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,12 +64,10 @@ public class MainActivity extends AppCompatActivity {
 
         //SignInActivity 클래스에서 인텐트로 넘겨온 id값을 받아온다.
         Intent intent = getIntent();
-        String id = intent.getStringExtra("id");
-        Log.d("IntentGetString", id);
-        //......................................................
         text_Account = (TextView)findViewById(R.id.text_Account);
         text_Balance = (TextView)findViewById(R.id.text_Balance);
 
+        id= memberId.id;
         drawerLayout = (DrawerLayout)findViewById(R.id.Drawer_Main);
         drawerMenu = (View)findViewById(R.id.Drawer_Menu);
         btn_menu = (ImageButton)findViewById(R.id.btn_menu);
@@ -80,6 +97,40 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 return true;
+            }
+        });
+
+        //계좌개설 클릭 시
+        btn_Account_Add = (LinearLayout)findViewById(R.id.btn_Account_Add);
+        btn_Account_Add.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(getApplicationContext(), AccountAddActivity.class);
+               intent.putExtra("id", memberId.id);
+               startActivity(intent);
+
+           }
+       });
+
+        // 계좌해지 클릭 시
+        btn_accountDelete = (LinearLayout)findViewById(R.id.btn_accountDelete);
+        btn_accountDelete.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View v) {
+               Intent intent = new Intent(MainActivity.this, AccountDeleteActivity.class);
+               intent.putExtra("id", memberId.id);
+               startActivity(intent);
+           }
+        });
+
+        // 계좌이체 클릭 시
+        account_TransferList = (LinearLayout)findViewById(R.id.btn_accounttransfer);
+        account_TransferList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AccountTransferActivity.class);
+                intent.putExtra("id", memberId.id);
+                startActivity(intent);
             }
         });
 
@@ -160,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
             if(link.equals("getAccountInfo_Main")){
                 if(s.length() > 0) {
                     Gson gson = new Gson();
-                    AccountVO m = gson.fromJson(s, AccountVO.class);
+                    accountVO m = gson.fromJson(s, accountVO.class);
                     if (m.getAccount() != null) {
                         Toast.makeText(getApplicationContext(), "환영합니다", Toast.LENGTH_SHORT).show();
                         String account = m.getAccount();
@@ -211,8 +262,8 @@ public class MainActivity extends AppCompatActivity {
             if(link.equals("my_Account_List")){
                 if(s.length() > 0) {
                    Gson gson = new Gson();
-                    AccountVO[] array = gson.fromJson(s, AccountVO[].class);
-                    List<AccountVO> myAccList = Arrays.asList(array);
+                    accountVO[] array = gson.fromJson(s, accountVO[].class);
+                    List<accountVO> myAccList = Arrays.asList(array);
 
                     Main_myAccountAdapter adapter = new Main_myAccountAdapter(myAccList);
 
@@ -244,6 +295,5 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onDrawerStateChanged(int newState) {        }
     };
-
 
 }

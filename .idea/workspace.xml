@@ -1,7 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="7078f783-c874-442a-8622-60f0002d94fd" name="Default Changelist" comment="" />
+    <list default="true" id="7078f783-c874-442a-8622-60f0002d94fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/KosBank/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/AccountDeleteActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/AccountTransferActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/FireBase/CustomFirebaseMessagingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/FireBase/MyFireBaseMessagingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/VO/TransferVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/test/memberId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/res/drawable/allradius_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/res/drawable/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/res/layout/activity_accountdelete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/KosBank/app/src/main/res/layout/activity_accounttransfer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KosBank/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/KosBank/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KosBank/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/KosBank/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/SignInActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/SignInActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/Web.java" beforeDir="false" afterPath="$PROJECT_DIR$/KosBank/app/src/main/java/com/teamproject/sample/kosbank/Web.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KosBank/app/src/main/res/layout/activity_drawmenu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/KosBank/app/src/main/res/layout/activity_drawmenu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KosBank/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/KosBank/build.gradle" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,8 +56,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
+=======
+    <property name="dart.analysis.tool.window.visible" value="false" />
+>>>>>>> dev_ksl
     <property name="last_opened_file_path" value="$PROJECT_DIR$/KosBank" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Dev76\workspace_android\and_kosbank\KosBank\app" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Dev76\workspace_android\and_kosbank\KosBank\app\src\main\java\com\teamproject\sample\kosbank" />
+      <recent name="D:\Dev76\workspace_android\and_kosbank\KosBank\app\src\main\java\com\teamproject\sample\kosbank\VO" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -34,11 +85,30 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1617860814826">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1617679806468" />
     <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1617860814826" />
+=======
+    <state x="740" y="277" key="FileChooserDialogImpl" timestamp="1618114836453">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1617679806468" />
+    <state x="740" y="277" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1618114836453" />
+>>>>>>> dev_ksl
   </component>
 </project>

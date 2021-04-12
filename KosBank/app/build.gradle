@@ -1,5 +1,6 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 27
     buildToolsVersion "27.0.3"
@@ -34,4 +35,26 @@ dependencies {
     implementation 'com.google.api-client:google-api-client-android:1.23.0' exclude module: 'httpclient'
     implementation 'com.google.http-client:google-http-client-gson:1.23.0' exclude module: 'httpclient'
     implementation 'com.google.apis:google-api-services-vision:v1-rev369-1.23.0'
+
+    //추가한 라인(계속 업그레이드 되고 있다.)
+    compile 'com.google.firebase:firebase-messaging:18.0.0'
+    // Add to the bottom of the file apply plugin: 'com.google.gms.google-services'
+    apply plugin: 'com.google.gms.google-services'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

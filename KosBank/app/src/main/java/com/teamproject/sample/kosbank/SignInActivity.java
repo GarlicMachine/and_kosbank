@@ -14,6 +14,7 @@ import android.widget.Toast;
 import com.google.gson.Gson;
 import com.google.sample.kosbank.R;
 import com.teamproject.sample.kosbank.VO.MemberVO;
+import com.teamproject.sample.kosbank.test.memberId;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -83,7 +84,9 @@ public class SignInActivity extends AppCompatActivity {
                 if (m.getId() != null) {
                     // 페이지 이동 : new Intent(현재페이지, 이동페이지)
                     Intent intent = new Intent(SignInActivity.this, MainActivity.class);
+                    //넘어가는 페이지에 인텐트에 값을 담아 넘긴다.
                     intent.putExtra("id", m.getId());
+                    memberId.id=m.getId();
                     startActivity(intent);
                 } else if (m.getId()== null) {
                     Toast.makeText(getApplicationContext(), "회원 정보가 올바르지 않습니다.",Toast.LENGTH_SHORT).show();
