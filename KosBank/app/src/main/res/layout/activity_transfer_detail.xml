@@ -31,5 +31,5 @@ android:id="@+id/Drawer_Main">
         </LinearLayout>
 
     </LinearLayout>
-
+    <include layout="@layout/activity_drawmenu" />
 </android.support.v4.widget.DrawerLayout>

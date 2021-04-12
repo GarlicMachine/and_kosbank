@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
     private Button Btn_Logout;
     private ImageButton btn_menu;
     private TextView text_Account, text_Balance;
+    private  String mainAccount;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,7 +57,15 @@ public class MainActivity extends AppCompatActivity {
         lay_MyAllAccount = (LinearLayout)findViewById(R.id.lay_MyAllAccount);
 
         //내 모든계좌 레이아웃 클릭 시 프레그먼트
-
+        Button btn_AccTranView = (Button)findViewById(R.id.btn_AccTranView);
+        btn_AccTranView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TransferDetail_Activity.class);
+                intent.putExtra("account", mainAccount);
+                startActivity(intent);
+            }
+        });
 
 
         //툴바 메뉴버튼 클릭 시
@@ -66,15 +75,13 @@ public class MainActivity extends AppCompatActivity {
                 drawerLayout.openDrawer(drawerMenu);
             }
         });
-/*
-        //회원가입 레이아웃 클릭 시
-        btn_SignUpPage = (View)findViewById(R.id.btn_SignUpPage);
-        btn_SignUpPage.setOnClickListener(new View.OnClickListener() {
+        drawerLayout.setDrawerListener(listener);
+        drawerMenu.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public void onClick(View v) {
-
+            public boolean onTouch(View v, MotionEvent event) {
+                return true;
             }
-        });*/
+        });
 
         //로그아웃 버튼 클릭 시
         Btn_Logout = (Button)findViewById(R.id.Btn_Logout);
@@ -83,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
             }
         });
-
        //금융상품
         LinearLayout layout = (LinearLayout)findViewById(R.id.btn_bankitem);
         layout.setOnClickListener(new View.OnClickListener() {
@@ -91,13 +97,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, BankItemActivity.class);
                 startActivity(intent);
-            }
-        });
-        drawerLayout.setDrawerListener(listener);
-        drawerMenu.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                return true;
             }
         });
 
@@ -158,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), "환영합니다", Toast.LENGTH_SHORT).show();
                         String account = m.getAccount();
                         int balance = m.getBalance();
-
+                        mainAccount = m.getAccount();
                         text_Account.setText(account);
                         text_Balance.setText(fmt.moneyFormatToWon(balance));
 
