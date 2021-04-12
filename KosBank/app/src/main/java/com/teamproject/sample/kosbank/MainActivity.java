@@ -99,6 +99,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        LinearLayout layout2 = (LinearLayout)findViewById(R.id.btn_funditem);
+        layout2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, FundCategoryActivity.class);
+                startActivity(intent);
+            }
+        });
 
         // 로그인하고나서 돈이 제일 많은 계좌정보를 띄운다.
         //InnerTask에 맵에 담은 값을 넘긴다.
