@@ -60,25 +60,27 @@ public class LoansProductsActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(Object o) {
             Log.d("JSON_RESULT", (String) o);
+            if(((String) o).length()>0){
+                Gson gson = new Gson();
+                Loans_productVO[] list = gson.fromJson(o.toString(),  Loans_productVO[].class);
+                List<Loans_productVO> array = Arrays.asList(list);
 
-            Gson gson = new Gson();
-            Loans_productVO[] list = gson.fromJson(o.toString(),  Loans_productVO[].class);
-            List<Loans_productVO> array = Arrays.asList(list);
+                // 2. 어댑터 생성,,, 데이터를 가져오기 위함
+                LoansAdapter adapter = new LoansAdapter(array);  // WeatherAdapter 매개변수 생성자를 먼저 만들고 생성
 
-            // 2. 어댑터 생성,,, 데이터를 가져오기 위함
-            LoansAdapter adapter = new LoansAdapter(array);  // WeatherAdapter 매개변수 생성자를 먼저 만들고 생성
+                // 3. 뷰와 어댑터 연결
+                ListView listView = findViewById(R.id.loan_list);
+                listView.setAdapter(adapter);
+                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                        Intent intent = new Intent(LoansProductsActivity.this, LoansDetailActivity.class);
+                        intent.putExtra("d_name",array.get(position).getD_name());
+                        startActivity(intent);
+                    }
+                });
+            }
 
-            // 3. 뷰와 어댑터 연결
-            ListView listView = findViewById(R.id.loan_list);
-            listView.setAdapter(adapter);
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                @Override
-                public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                    Intent intent = new Intent(LoansProductsActivity.this, LoansDetailActivity.class);
-                    intent.putExtra("d_name",array.get(position).getD_name());
-                    startActivity(intent);
-                }
-            });
         }
     }
 }

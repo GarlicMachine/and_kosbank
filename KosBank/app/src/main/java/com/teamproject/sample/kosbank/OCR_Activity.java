@@ -328,9 +328,9 @@ public class OCR_Activity extends AppCompatActivity {
             OCR_Activity activity = mActivityWeakReference.get();
             if (activity != null && !activity.isFinishing()) {
                 TextView imageDetail = activity.findViewById(R.id.image_details);
-                String a = "이름: " + result.get("Name") + ", ";
-                a += "주민번호" + result.get("RRN") + ", ";
-                a += "주소" + result.get("Address");
+                String a = "이름: " + result.get("Name") + "\n ";
+                a += "주민번호: " + result.get("RRNf") + " - " + result.get("RRNl") + "\n";
+                a += "주소: " + result.get("Address");
 
 
                 imageDetail.setText(a);

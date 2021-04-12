@@ -1,74 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+    android:fitsSystemWindows="true"
+    android:background="#fff">
+
+
+    <include
+        layout="@layout/guast_toolbar"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="center" />
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:id="@+id/linearLayout"
+        android:layout_width="370dp"
+        android:layout_height="220dp"
+        android:layout_gravity="center"
+        android:background="@drawable/allradius_blue"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="200dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="#fff"
+                android:textSize="27dp"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="로그인"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/solid_tblr"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:layout_marginBottom="7dp"
+                android:orientation="vertical">
 
         <EditText
             android:id="@+id/edt_id"
-            android:layout_width="match_parent"
+            android:layout_width="290dp"
             android:layout_height="50dp"
-            android:layout_marginBottom="5dp"
-            android:padding="10dp"
-            android:textColor="#555555"
             android:hint="ID"
             android:inputType="textPersonName"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="129dp" />
-
-        <EditText
-            android:id="@+id/edt_pwd"
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:layout_marginBottom="10dp"
-            android:padding="10dp"
-            android:textColor="#555555"
-            android:hint="PASSWORD"
-            android:inputType="textPassword"
-            tools:layout_editor_absoluteX="85dp"
-            tools:layout_editor_absoluteY="197dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/btn_SignIn"
-                android:layout_width="140dp"
-                android:layout_height="wrap_content"
-                android:background="#555555"
-                android:text="로그인"
-                android:textColor="#ffffff"
-                tools:layout_editor_absoluteX="148dp"
-                tools:layout_editor_absoluteY="282dp" />
+            android:background="@android:color/transparent"/>
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:paddingLeft="20dp">
-                <Button
-                    android:id="@+id/btn_SignUpPage"
-                    android:layout_width="140dp"
-                    android:layout_height="wrap_content"
-                    android:background="#555555"
-                    android:textColor="#ffffff"
-                    android:text="회원가입"
-                    tools:layout_editor_absoluteX="148dp"
-                    tools:layout_editor_absoluteY="282dp" />
+                android:layout_height="wrap_content"
+                android:background="@drawable/solid_tblr"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp">
+        <EditText
+            android:id="@+id/edt_pwd"
+            android:layout_width="290dp"
+            android:layout_height="45dp"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:background="@android:color/transparent" />
             </LinearLayout>
 
-
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="260dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
 
+            <Button
+                android:id="@+id/btn_SignIn"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/allradius"
+                android:text="로그인"
+                android:textColor="#000"
+                android:textSize="17dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="right">
+                <Button
+                    android:id="@+id/btn_SignUpPage"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/allradius_gray"
+                    android:text="회원가입"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
-</RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
