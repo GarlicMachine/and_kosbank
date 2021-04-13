@@ -1,9 +1,11 @@
 package com.teamproject.sample.kosbank;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
@@ -53,6 +55,24 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
     }
+    @Override
+    public void onBackPressed() {
+        AlertDialog.Builder alert_ex = new AlertDialog.Builder(this);
+        alert_ex.setTitle("정말로 종료 하시겠습니까?")
+                .setNegativeButton("취소", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {}
+                })
+                .setPositiveButton("종료", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finishAffinity();
+                    }
+                });
+
+        AlertDialog alert = alert_ex.create();
+        alert.show();
+    }
 
     public class InnerTask extends AsyncTask<Map, Integer, String>{
 
@@ -91,9 +111,9 @@ public class SignInActivity extends AppCompatActivity {
                 } else if (m.getId()== null) {
                     Toast.makeText(getApplicationContext(), "회원 정보가 올바르지 않습니다.",Toast.LENGTH_SHORT).show();
                     //JSON으로 받은 데이터를 VO Obejct로 바꿔준다."회원 정보가 올바르지 않습니다.", Toast.LENGTH_SHORT).show();
-                } else {
+                } /*else {
                     Toast.makeText(getApplicationContext(), "가입 인증이 필요한 회원입니다.", Toast.LENGTH_SHORT).show();
-                }
+                }*/
             } else {
                 Toast.makeText(getApplicationContext(), "로그인 실패", Toast.LENGTH_SHORT).show();
             }

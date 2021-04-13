@@ -63,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ((ImageButton)findViewById(R.id.btn_menu)).setImageResource(R.drawable.menuimg);
 
         //SignInActivity 클래스에서 인텐트로 넘겨온 id값을 받아온다.
         Log.e("Token", FirebaseInstanceId.getInstance().getToken());
@@ -91,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
+        //View drawerMenu = (View)findViewById(R.id.Drawer_Menu);
+        //ImageButton btn_menu = (ImageButton)findViewById(R.id.btn_menu);
         //툴바 메뉴버튼 클릭 시
         btn_menu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -145,6 +148,8 @@ public class MainActivity extends AppCompatActivity {
         Btn_Logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SignInActivity.class);
+                startActivity(intent);
             }
         });
        //금융상품

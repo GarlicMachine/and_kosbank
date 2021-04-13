@@ -58,7 +58,10 @@ public class AccountTransferActivity  extends AppCompatActivity {
 
         //인텐트로 넘겨온 값을 받아온다.
         Intent intent = getIntent();
-        String id = intent.getStringExtra("id");
+        if( memberId.id.equals(null)){
+            memberId.id=intent.getStringExtra("id");
+        }
+        String id = memberId.id;
 
         InnerTask task = new InnerTask();
         Map<String,String> map = new HashMap<>();
