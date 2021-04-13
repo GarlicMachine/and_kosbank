@@ -19,6 +19,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.gson.Gson;
 import com.google.sample.kosbank.R;
 import com.teamproject.sample.kosbank.VO.accountVO;
@@ -63,6 +65,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //SignInActivity 클래스에서 인텐트로 넘겨온 id값을 받아온다.
+        Log.e("Token", FirebaseInstanceId.getInstance().getToken());
+        FirebaseMessaging.getInstance().subscribeToTopic("allDevices");
+
+        //인텐트로 넘겨온 값을 받아온다.
         Intent intent = getIntent();
         text_Account = (TextView)findViewById(R.id.text_Account);
         text_Balance = (TextView)findViewById(R.id.text_Balance);

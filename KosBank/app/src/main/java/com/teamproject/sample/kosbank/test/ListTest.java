@@ -27,7 +27,7 @@ public class ListTest  extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_test);
 
-
+/*
         ArrayList<testVO> data= new ArrayList<testVO>();
         data.add(new testVO("서울","20도","맑음","1"));
         data.add(new testVO("서울","30도","맑음","2"));
@@ -48,7 +48,7 @@ public class ListTest  extends AppCompatActivity {
                 Toast.makeText(ListTest.this,data.get(position).getText2(),Toast.LENGTH_SHORT).show();
 
             }
-        });
+        });*/
     }
 
 

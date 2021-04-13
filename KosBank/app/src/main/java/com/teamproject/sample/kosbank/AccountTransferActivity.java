@@ -14,6 +14,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.gson.Gson;
 import com.google.sample.kosbank.R;
 import com.teamproject.sample.kosbank.VO.MemberVO;
@@ -117,6 +118,7 @@ public class AccountTransferActivity  extends AppCompatActivity {
                 map.put("in_comment", in_comment.getText().toString());
                 map.put("sender_account", sender_account.getText().toString());
                 map.put("sender_name", sender_name.getText().toString());
+                map.put("token", FirebaseInstanceId.getInstance().getToken());
 
                 task.link="androidAccountTransferAction";
                 task.execute(map);
