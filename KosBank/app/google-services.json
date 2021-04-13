@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:936241527197:android:c69f9368fcfc864c2c1774",
+        "mobilesdk_app_id": "1:936241527197:android:a62b973172f1b9a12c1774",
         "android_client_info": {
-          "package_name": "com.teamproject.sample.kosbank"
+          "package_name": "com.google.sample.kosbank"
         }
       },
       "oauth_client": [

@@ -40,6 +40,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Log.e("Token", FirebaseInstanceId.getInstance().getToken());
+        FirebaseMessaging.getInstance().subscribeToTopic("allDevices");
+
         //인텐트로 넘겨온 값을 받아온다.
         Intent intent = getIntent();
         //id = intent.getStringExtra("id");
