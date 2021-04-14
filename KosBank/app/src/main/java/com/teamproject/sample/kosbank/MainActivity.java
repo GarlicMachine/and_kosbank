@@ -224,7 +224,6 @@ public class MainActivity extends AppCompatActivity {
                     Gson gson = new Gson();
                     accountVO m = gson.fromJson(s, accountVO.class);
                     if (m.getAccount() != null) {
-                        Toast.makeText(getApplicationContext(), "환영합니다", Toast.LENGTH_SHORT).show();
                         String account = m.getAccount();
                         int balance = m.getBalance();
                         mainAccount = m.getAccount();
