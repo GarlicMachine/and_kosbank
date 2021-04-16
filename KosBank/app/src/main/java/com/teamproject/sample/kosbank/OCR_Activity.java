@@ -253,20 +253,6 @@ public class OCR_Activity extends AppCompatActivity {
                 Feature labelDetection = new Feature();
                 labelDetection.setType("DOCUMENT_TEXT_DETECTION");
                 /*
-                  TYPE_UNSPECIFIED	Unspecified feature type.
-                  FACE_DETECTION	Run face detection.
-                  LANDMARK_DETECTION	Run landmark detection.
-                  LOGO_DETECTION	Run logo detection.
-                  LABEL_DETECTION	Run label detection.
-                  TEXT_DETECTION	Run text detection / optical character recognition (OCR). Text detection is optimized for areas of text within a larger image; if the image is a document, use DOCUMENT_TEXT_DETECTION instead.
-                  DOCUMENT_TEXT_DETECTION	Run dense text document OCR. Takes precedence when both DOCUMENT_TEXT_DETECTION and TEXT_DETECTION are present.
-                  SAFE_SEARCH_DETECTION	Run Safe Search to detect potentially unsafe or undesirable content.
-                  IMAGE_PROPERTIES	Compute a set of image properties, such as the image's dominant colors.
-                  CROP_HINTS	Run crop hints.
-                  WEB_DETECTION	Run web detection.
-                  PRODUCT_SEARCH	Run Product Search.
-                  OBJECT_LOCALIZATION	Run localizer for object detection.
-
                   TYPE_UNSPECIFIED 지정되지 않은 기능 유형입니다.
                   FACE_DETECTION 얼굴 감지를 실행합니다.
                   LANDMARK_DETECTION 랜드 마크 감지를 실행합니다.
@@ -280,7 +266,7 @@ public class OCR_Activity extends AppCompatActivity {
                   WEB_DETECTION 웹 감지를 실행합니다.
                   PRODUCT_SEARCH 상품 검색을 실행합니다.
                   OBJECT_LOCALIZATION 개체 감지를 위해 로컬 라이저를 실행합니다.
-                 */
+                 */ 
                 labelDetection.setMaxResults(MAX_LABEL_RESULTS);
                 add(labelDetection);
             }});
@@ -411,11 +397,7 @@ public class OCR_Activity extends AppCompatActivity {
             String Name= null;
             String RRN = null;
             String Address= null;
-            /*
-            for(int i =0; i < infos.length; i++){
-                message.append(i+"번째 : " + args[i] + "\n");
-            }
-            */
+
             int nameidx = infos[1].indexOf("(");
             Name = infos[1].substring(0, nameidx);
             RRN = infos[2];
